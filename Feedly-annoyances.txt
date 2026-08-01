@@ -1,1 +1,22 @@
+! Title:Feedly-custom by UNKNOWN
+
+! 📌記事内キーワード非表示（Feedlyなどで使う）
+feedly.com##article:has-text(/Amazon.com/)
+feedly.com##article:has-text(/フジテレビ/)
+feedly.com##article:has-text(/活動休止/)
+feedly.com##article:has-text(/芸人/)
+feedly.com##article:has-text(/タレント/)
+feedly.com##article:has-text(/俳優/)
+feedly.com##article:has-text(/女優/)
+feedly.com##article:has-text(/ワイモバイル/)
+feedly.com##article:has-text(/吉本興業/)
+feedly.com##article:has-text(/アイドルグループ/)
+feedly.com##article:has-text(/活動終了/)
+feedly.com##article:has-text(/日本テレビ/)
+feedly.com##article:has-text(/解散/)
+feedly.com##article:has-text(/Xiaomi/)
+feedly.com##article:has-text(/OPPO/)
+feedly.com##article:has-text(/POCO/)
+feedly.com##article:has-text(/HUAWEI/)
+google.com/##.XVMlrc > div:nth-child(1) > div:nth-child(1)
 
