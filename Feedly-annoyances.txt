@@ -20,3 +20,66 @@ feedly.com##article:has-text(/POCO/)
 feedly.com##article:has-text(/HUAWEI/)
 google.com/##.XVMlrc > div:nth-child(1) > div:nth-child(1)
 
+! ▼ 通常動画・チャンネル一覧
+youtube.com##ytd-channel-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-grid-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-rich-grid-media:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-compact-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-playlist-video-renderer:has-text(はいじぃ迷作劇場)
+
+! --- 🧱 YouTube Shorts 全面非表示ルール（2025年版） ---
+
+! Shortsセクション全体（ホーム・おすすめ）
+youtube.com##ytd-rich-section-renderer:has(ytd-reel-shelf-renderer)
+youtube.com##ytd-rich-shelf-renderer:has(ytd-reel-shelf-renderer)
+youtube.com##ytd-reel-shelf-renderer
+
+! Shorts動画カード（個別のサムネイル）
+youtube.com##ytd-reel-item-renderer
+youtube.com##ytd-rich-grid-media:has(a[href*="/shorts/"])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-video-renderer:has(a[href*="/shorts/"])
+
+! Shorts関連リンク・ボタン
+youtube.com##a[href^="/shorts"]
+youtube.com##ytd-mini-guide-entry-renderer:has(a[href^="/shorts"])
+youtube.com##tp-yt-paper-item:has(a[href^="/shorts"])
+
+! Shortsプレイヤー（再生ページ）
+youtube.com##ytd-reel-player-header-renderer
+youtube.com##ytd-reel-player-overlay-renderer
+youtube.com##ytd-reel-player-reel-header-renderer
+
+! --- 🎯 YouTube「他の人はこちらも検索」非表示 ---
+youtube.com##ytd-horizontal-card-list-renderer:has-text(他の人はこちらも検索)
+youtube.com##ytd-rich-shelf-renderer:has-text(他の人はこちらも検索)
+youtube.com##ytd-rich-section-renderer:has-text(他の人はこちらも検索)
+
+! --- 🎵 YouTube「ミックス（Mix）」非表示 ---
+youtube.com##ytd-radio-renderer
+youtube.com##ytd-compact-radio-renderer
+youtube.com##ytd-rich-grid-row:has(a[href*="list=RD"])
+youtube.com##ytd-rich-item-renderer:has(a[href*="list=RD"])
+youtube.com##ytd-playlist-renderer:has-text(Mix)
+youtube.com##ytd-grid-playlist-renderer:has-text(Mix)
+
+! --- ホーム・検索結果のポッドキャスト「○件のエピソード」非表示 ---
+youtube.com##ytd-shelf-renderer:has-text(件のエピソード)
+youtube.com##ytd-rich-shelf-renderer:has-text(件のエピソード)
+youtube.com##ytd-rich-section-renderer:has-text(件のエピソード)
+
+! --- 検索結果「関連する検索から」非表示（2025年11月対応版） ---
+youtube.com##ytd-related-searches-renderer
+youtube.com##ytd-search-refinement-card-renderer
+youtube.com##ytd-search-refinements-renderer
+youtube.com##ytd-vertical-list-renderer:has-text(関連する検索から)
+
+! --- 特定チャンネル（例：グルメ探偵TV）の動画を全域で非表示 ---
+youtube.com##ytd-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-rich-item-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-grid-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-playlist-video-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-reel-item-renderer:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-rich-grid-media:has-text(はいじぃ迷作劇場)
+youtube.com##ytd-rich-shelf-renderer:has-text(はいじぃ迷作劇場)
