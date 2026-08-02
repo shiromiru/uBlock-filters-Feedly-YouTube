@@ -1,3 +1,3 @@
 # uBlock-Origin-Feedly-YouTube
 
-非表示
+FeedlyとYouTubeの特定キーワード非表示
