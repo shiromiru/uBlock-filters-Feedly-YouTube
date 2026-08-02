@@ -1,4 +1,4 @@
-! Title:Feedly-Custom by UNKNOWN
+! Title:Feedly-Custom PC
 
 ! 📌記事内キーワード非表示（Feedlyなどで使う）
 feedly.com##article:has-text(/Amazon.com/)
